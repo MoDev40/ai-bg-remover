@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
     Dialog,
     DialogContent,
@@ -13,7 +13,7 @@ import axios from 'axios'
 import { Loader } from 'lucide-react'
 import CompareSlider from './CompareSlider'
 import Download from './Download'
-  
+import { baseUrl } from '@/lib/config'
 function Modal() {
     const [file,setFile] = useState(null)
 
@@ -36,7 +36,7 @@ function Modal() {
             if(!file) return 
             const formData = new FormData();
             formData.append('image',file);
-            const {data} = await axios.post('/api/remove-bg',formData,{
+            const {data} = await axios.post(`${baseUrl}/api/remove-bg`,formData,{
                 headers:'Content-Type:multipart/form-data',
             })
             setNewImage(data.newOne);
