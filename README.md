@@ -6,7 +6,6 @@
   ![GitHub](https://img.shields.io/github/license/MoDev40/ai-bg-remover.git)
   ![GitHub repo size](https://img.shields.io/github/repo-size/MoDev40/ai-bg-remover.git)
   ![GitHub issues](https://img.shields.io/github/issues/MoDev40/ai-bg-remover.git)
-  ![GitHub pull requests](https://img.shields.io/github/issues-pr/MoDev40/ai-bg-remover.git)
 
   MERN BG Remover is a web application for removing backgrounds from images. It is built using the MERN stack (Express.js, React.js, Node.js) and utilizes the Yonode toolkit for Node.js development.
 
@@ -35,19 +34,24 @@
   2. Navigate to the project directory:
      ```
      cd ai-bg-remover
-     cd ai-bg-remover/frontend
      ```
-  3. Install dependencies:
+  3. Install dependencies backend dependencies:
      ```
      npm install
      ```
-
+   4. Navigate to the project directory:
+   ```
+   cd frontend
+   ```
+   5. Install dependencies frontend dependencies:
+   ```
+   npm install
+   ```
   ## Usage
 
   1. Start the server:
      ```
      npm start
-     npm run dev
      ```
   1. Start the frontend:
      ```

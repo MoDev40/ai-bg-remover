@@ -5,8 +5,7 @@
   "main": "./backend/app.js",
   "type": "module",
   "scripts": {
-    "start": "node ./backend/app.js",
-    "dev": "nodemon ./backend/app.js"
+    "start": "nodemon ./backend/app.js"
   },
   "dependencies": {
     "chalk": "5.3.0",
