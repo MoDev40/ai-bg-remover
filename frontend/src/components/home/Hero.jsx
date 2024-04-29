@@ -1,8 +1,12 @@
+import { Github } from 'lucide-react'
 import Modal from './Modal'
 export default function Hero() {
   return (
     <div className="bg-white">
       <div className="relative isolate px-6 lg:px-8">
+        <a href='https://github.com/MoDev40' target='_blank' className='p-5'>
+          <Github size={30} className=' animate-bounce' />
+        </a>
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
